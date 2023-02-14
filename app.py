@@ -1,7 +1,7 @@
 from flask import Flask, make_response
 import json
 import time
-from .jobsdb import get_all_data
+from src.jobsdb import get_all_data
 
 
 app = Flask(__name__)
