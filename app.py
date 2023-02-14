@@ -1,7 +1,7 @@
 from flask import Flask, make_response
 import json
 import time
-from flask_backend.jobsdb import get_all_data
+from .jobsdb import get_all_data
 
 
 app = Flask(__name__)
@@ -14,7 +14,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "<p>Hello world</p>"
+    return "<p>This is just a headless webservice to expose a few apis. No template nor static files</p>"
 
 @app.route("/all_job_terms")
 def get_all_terms():
