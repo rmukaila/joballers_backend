@@ -1,6 +1,9 @@
 from pymongo import MongoClient
+import os
 
-mongo_url = 'mongodb://localhost:27011'
+mongo_url = os.getenv('mongodburl') #Note this env is on the cloud not your local
+
+# mongo_url = 'mongodb://localhost:27011'
 
 mongoClNT = MongoClient(mongo_url)
 
