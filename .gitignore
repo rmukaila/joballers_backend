@@ -1,0 +1,5 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# Virtual environment for the project
+/env_joballers_backend
+
