@@ -30,7 +30,7 @@ class Controller_():
     
     def post_job(self, job:Job) -> Union[dict,bool]:
         try:
-            inserted_job = self.job_col.insert_one(job)
+            inserted_job = self.job_col.insert_one(job.dict())
             return inserted_job.inserted_id
         except:
             raise Exception(FAILED_JOB_INSERTION)
