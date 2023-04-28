@@ -1,7 +1,7 @@
 from flask import Flask, make_response
 import json
 import time
-from jobsdb import get_all_data  #Note: this way of importing is the one supported by render hosting site. to run the service on local machine, use ".jobsdb " or "flask_backend.jobsdb"
+from .jobsdb import get_all_data  #Note: this way of importing is the one supported by render hosting site. to run the service on local machine, use ".jobsdb " or "flask_backend.jobsdb"
 
 
 app = Flask(__name__)
