@@ -1,13 +1,5 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
-
-# virtualenv
-/joballers_env
-
-# misc
-# .DS_Store
-# .env
-# npm-debug.log*
-# yarn-debug.log*
-# yarn-error.log*
+# Virtual environment for the project
+/env_joballers_backend
 
